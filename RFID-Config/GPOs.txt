@@ -1,0 +1,8 @@
+Gruppenrichtlinien:
+
+Computer -> Windows -> Skripts: Starten
+Administrative -> System -> Gruppenrichtlinien: Skriptrichtlinienverarbeitung
+Administrative -> System -> Anmeldung: auf Netzwerk warten
+Administrative -> System -> Skripts: wartezeit=5
+
+(Administrative -> System -> Skripts: asynchron , wartezeit=0, sichtbar)

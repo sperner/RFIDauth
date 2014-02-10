@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ginastub - Win32 Release--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ cl -Z7 -Od -c -W3 -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -nologo -D_X86_=1 -D_WINNT -D_WIN32_WINNT=0x0400 -D_WIN32_IE=0x0300 -DWINVER=0x0400 -DWIN32  -D_WIN32 -D_MT -D_DLL -MD ginastub.c
+ginastub.c
+ginastub.c(251) : warning C4101: 'dwDisposition' : unreferenced local variable
+ginastub.c(250) : warning C4101: 'hkey' : unreferenced local variable
+ginastub.c(445) : warning C4715: 'WlxStartApplication' : not all control paths return a value
+ link -debug:full -debugtype:cv /NODEFAULTLIB /INCREMENTAL:NO /PDB:NONE /RELEASE /NOLOGO -entry:_DllMainCRTStartup@12 -dll msvcrt.lib oldnames.lib kernel32.lib  ws2_32.lib mswsock.lib advapi32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib  ginastub.obj -out:ginastub.dll -def:ginastub.def
+   Creating library ginastub.lib and object ginastub.exp
+
+
+
+<h3>Results</h3>
+ginastub.dll - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

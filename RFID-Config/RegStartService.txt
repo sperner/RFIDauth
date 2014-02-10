@@ -1,0 +1,28 @@
+    *  "Start" > "Programme" > "Zubehör" > "Eingabeaufforderung"
+    * Geben Sie folgendes den folgenden Befehl ein: "<Pfad>\INSTSRV.EXE <Eigener Dienst> <Pfad>\SRVANY.EXE" Z.B.: "c:\windows\system32\intsrv.exe Notepad c:\windows\system32\srvany.exe"
+    * Starten Sie ...\windows\regedit.exe bzw. ...\winnt\regedt32.exe.
+    * Klicken Sie sich durch folgende Schlüssel (Ordner) hindurch:
+      HKEY_LOCAL_MACHINE
+      System
+      CurrentControlSet
+      Services
+      <Eigener Dienst>
+      Parameters
+      Falls dieser Schlüssel noch nicht existiert, dann müssen Sie ihn erstellen. Dazu klicken Sie mit der rechten Maustaste in das rechte Fenster. Im Kontextmenü wählen Sie "Neu" > "Schlüssel". Als Schlüsselnamen geben Sie "Parameters" ein.
+    * Doppelklicken Sie auf den Schlüssel "Application".
+      Falls dieser Schlüssel noch nicht existiert, dann müssen Sie ihn erstellen. Dazu klicken Sie mit der rechten Maustaste in das rechte Fenster. Im Kontextmenü wählen Sie "Neu" > "Zeichenfolge" (REG_SZ). Als Schlüsselnamen geben Sie "Application" ein.
+    * Als Zeichenfolge geben Sie den Pfad- und Programmnamen ein, welcher als Dienst gestartet werden soll. Z.B.: "c:\windows\notepad.exe".
+    * Geben Sie in der Eingabeaufforderung folgenden Befehl ein: "NET START <Eigener Dienst>" Z.B.: "net start Notepad"
+    * Über die Systemsteuerung "Dienste" können Sie nun noch weitere Einstellungen vornehmen. 
+
+
+
+
+
+Step by Step:
+
+Xp Resource-Kit installieren
+
+"C:\Programme\Windows Resource Kits\Tools\instsrv.exe" RFIDlogon "C:\Programme\Windows Resource Kits\Tools\srvany.exe"
+
+StartAsService.bmp beachten!

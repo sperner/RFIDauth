@@ -1,0 +1,13 @@
+Hardware-dependent User-authentication through RFID and automated Login & Logout
+
+This program consists of three parts:
+	- authenticator
+	- configurator
+	- dynamic-linked-library
+
+The authenticator is the program which handels the communication between the RFID reader/writer and the windows system.
+The configurator is a tool which is needed to configure RFID tags for usage with the authenticator.
+The diva.dll is a library which replaces the original msgina.dll, which handels user authentication.
+
+Authenticator and configurator are programmed in Visual Basic.
+The Library is programmed in Visual C++, based on an MS example.
